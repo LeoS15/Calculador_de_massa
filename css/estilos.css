@@ -1,0 +1,56 @@
+body {
+    background-color: rgb(88, 86, 86);
+}
+
+.forms,
+#calcula {
+    width: 20vw;
+    display: flex;
+    flex-direction: row;
+    margin: 1vw auto;
+    padding: 1vw;
+}
+
+#calcula {
+    background-color: blueviolet;
+    border: none;
+    color: #fff;
+    border-radius: 1vw;
+}
+
+#calcula p {
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+.cap,
+.resultado {
+    width: 30vw;
+    background-color: #FFF;
+    padding: 1vw;
+    border-radius: 1vw;
+    margin: 8% auto;
+}
+
+#result {
+    padding: 0;
+    margin: 0;
+}
+
+@media(max-width:1000px) {
+    .cap {
+        width: 90vw;
+        margin-top: 50%
+    }
+    .forms,
+    #calcula {
+        width: 70vw;
+        height: 5vh;
+        margin: 5vw auto
+    }
+    .resultado {
+        width: 80vw;
+        padding: 4vw;
+        height: 5vh;
+    }
+}
