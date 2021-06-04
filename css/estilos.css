@@ -1,5 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 body {
-    background-color: rgb(88, 86, 86);
+    background-image: url(../imagens/fundo.jpg);
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-areas: 'corpo resultado';
+    margin-top: 10%;
+}
+
+.corpo,
+.resultado {
+    width: 30vw;
+    background-color: #FFF;
+    border-radius: 1vw;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.corpo {
+    grid-area: corpo;
+    padding: 1vw;
+}
+
+.corpo h1,
+.resultado {
+    color: blueviolet;
 }
 
 .forms,
@@ -21,24 +49,17 @@ body {
 #calcula p {
     margin: 0 auto;
     font-size: 1.5rem;
+    text-align: center;
 }
 
-.cap,
 .resultado {
-    width: 30vw;
-    background-color: #FFF;
-    padding: 1vw;
-    border-radius: 1vw;
-    margin: 8% auto;
-}
-
-#result {
-    padding: 0;
-    margin: 0;
+    grid-area: resultado;
+    height: 25vh;
+    font-size: 1.4vw;
 }
 
 @media(max-width:1000px) {
-    .cap {
+    .corpo {
         width: 90vw;
         margin-top: 50%
     }

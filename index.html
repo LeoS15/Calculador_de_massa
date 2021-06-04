@@ -11,18 +11,21 @@
 </head>
 
 <body>
-    <section class="cap">
-        <input type="number" id="ap" class="forms" placeholder="Aplicação">
-        <input type="number" id="lg" class="forms" placeholder="Largura da faca">
-        <input type="number" id="met" class="forms" placeholder="Quantidade em metros">
-        <input type="number" id="pcr" class="forms" placeholder="PCR">
-
-        <button id="calcula" onclick="calc()"><p>Calcular</p></button>
+    <section class="grid_container">
+        <section class="corpo">
+            <h1>Calculadora de massa para pesagem</h1>
+            <input type="number" id="ap" class="forms" placeholder="Aplicação">
+            <input type="number" id="lg" class="forms" placeholder="Largura da faca">
+            <input type="number" id="met" class="forms" placeholder="Quantidade em metros">
+            <input type="number" id="pcr" class="forms" placeholder="PCR">
+            <button id="calcula" onclick="calc()"><p>Calcular</p></button>
+        </section>
+        <Section class="resultado">
+            <h1>Resultado</h1>
+            <p id="result"></p>
+            <p id="result_pcr"></p>
+        </Section>
     </section>
-    <Section class="resultado">
-        <p id="result"></p>
-        <p id="result_pcr"></p>
-    </Section>
 
 </body>
 
